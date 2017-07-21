@@ -1,4 +1,4 @@
-import Button from '../../../src/Button.vue'
+import Button from '../../src/Button.vue'
 import {expect} from 'chai'
 import sinon from 'sinon'
 
