@@ -1,16 +1,22 @@
 # Changelog
 
-### 1.0.4
+### 1.0.5
 
 Changed:
  
 - Reverted last change
 
-### 1.0.3
+### 1.0.4
 
 Changed:
  
 - Removed emit (test)
+
+### 1.0.3
+
+Changed:
+ 
+- Emit click details
 
 ### 1.0.2
 
