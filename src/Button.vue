@@ -1,22 +1,22 @@
 <template>
-  <button class="progress-button" :class="{active: isActivated}" data-progress-style="fill-back" @click="click">
-    <div class="progress" :style="styling"></div>
-    <div class="content"><slot /></div>
+  <button class="__progress-button" :class="{active: isActivated}" data-progress-style="fill-back" @click="click">
+    <div class="__progress" :style="styling"></div>
+    <div class="__progress-button-content"><slot /></div>
   </button>
 </template>
 <style lang="sass" scoped>
-  .progress-button
+  .__progress-button
     position: relative
 
-  .progress-button:not(.active)
+  .__progress-button:not(.active)
     cursor: pointer
 
-  .progress-button .content
+  .__progress-button .__progress-button-content
     position: relative
     z-index: 10
     opacity: 1
 
-  .progress-button .progress
+  .__progress-button .__progress
     width: 0
     z-index: 5
     opacity: 0
@@ -25,7 +25,7 @@
     left: 0
     right: 0
 
-  .progress-button.active .progress
+  .__progress-button.active .__progress
     opacity: 1
     transition-timing-function: ease
 

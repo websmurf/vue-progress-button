@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.0.6
+
+Changed:
+ 
+- Avoid styling conflicts by more specific css
+
 ### 1.0.5
 
 Changed:
