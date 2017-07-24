@@ -90,9 +90,9 @@ export default {
     }
   },
   methods: {
-    click () {
+    click (event) {
       this.start()
-      this.$emit('click')
+      this.$emit('click', event)
     },
     start () {
       this.isActive = true
