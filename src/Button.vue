@@ -20,7 +20,7 @@
     width: 0
     z-index: 5
     opacity: 0
-    transition: all 0.3s ease
+    transition: all 0s ease
     position: absolute
     left: 0
     right: 0
