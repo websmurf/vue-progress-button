@@ -1,5 +1,12 @@
 # Changelog
 
+### 1.1.0
+
+Changed:
+ 
+- Removed ending animation (100% -> 0%)
+- Changed examples with better color scheme
+
 ### 1.0.6
 
 Changed:
