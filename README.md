@@ -2,6 +2,8 @@
 
 A simple button that displays progress. Compatible with Vue 2.x
 
+Inspired by the button animations displayed on [https://tympanus.net/Development/ProgressButtonStyles/](https://tympanus.net/Development/ProgressButtonStyles/)
+
 ## Install
 
 ```
@@ -40,7 +42,7 @@ export default {
 }
 ```
 
-## Configuration
+## Configuration options
 
 Option    | Type   | Default | Description  
 --------- | ------ | ------- | ------------
