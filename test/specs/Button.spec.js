@@ -119,12 +119,15 @@ describe('button.vue', function () {
   it('should have a click method that calls the start method and emits a click event', function () {
     // Create a sinon stub
     Button.start = sinon.stub()
+    Button.$emit = sinon.stub()
 
     // Call the start method
     Button.methods.click.call(Button)
 
     // Validate if the start method and the emit event are being called
     expect(Button.start.calledOnce).to.equal(true)
+    expect(Button.$emit.calledOnce).to.equal(true)
+    expect(Button.$emit.calledWith('click')).to.equal(true)
   })
 
   it('should have a start method that sets the isActive data property to true and starts the timer', function () {
