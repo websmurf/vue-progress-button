@@ -19,8 +19,8 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "unit": "cross-env BABEL_ENV=test karma start test/karma.conf.js --single-run",
     "lint": "eslint --ext .js,.vue src",
-    "preversion": "npm run unit",
-    "version": "npm run build && git add -A dist",
+    "preversion": "yarn run unit",
+    "version": "yarn run build && git add -A dist",
     "postversion": "git push && git push --tags"
   },
   "repository": {
