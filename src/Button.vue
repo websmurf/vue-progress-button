@@ -1,5 +1,5 @@
 <template>
-  <button class="__progress-button" :class="{active: isActivated}" data-progress-style="fill-back" @click="click">
+  <button class="__progress-button" :class="{active: isActivated}" :disabled="isActive" data-progress-style="fill-back" @click="click">
     <div class="__progress" :style="styling"></div>
     <div class="__progress-button-content"><slot /></div>
   </button>

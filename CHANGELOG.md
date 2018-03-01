@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.2.0
+
+Changed:
+
+- Disable button while animation runs to avoid double submits
+
 ### 1.1.0
 
 Changed:
