@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button.vue renders correctly in active state 1`] = `
+<button data-progress-style="fill-back" class="__progress-button active" disabled="disabled">
+    <div class="__progress" style="width: 0%; background-color: rgb(85, 85, 85); top: 0px; bottom: 0px;"></div>
+    <div class="__progress-button-content"></div>
+</button>
+`;
+
+exports[`Button.vue renders correctly in default state 1`] = `
+<button data-progress-style="fill-back" class="__progress-button">
+    <div class="__progress" style="width: 0%; background-color: rgb(85, 85, 85); top: 0px; bottom: 0px;"></div>
+    <div class="__progress-button-content"></div>
+</button>
+`;

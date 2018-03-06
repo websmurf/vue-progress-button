@@ -127,7 +127,7 @@ describe('Button.vue', () => {
     expect(wrapper.vm.end).toHaveBeenCalledTimes(0)
 
     // Move time forward and set percentage to 100 to force the end call
-    wrapper.vm.percent = 100
+    wrapper.setData({percent: 100})
     jest.advanceTimersByTime(10)
 
     // Validate again
@@ -169,7 +169,7 @@ describe('Button.vue', () => {
     let wrapper = shallow(Button)
 
     // Set start value
-    wrapper.vm.percent = 50
+    wrapper.setData({percent: 50})
 
     // Set to 25 and validate result
     wrapper.vm.decrease(5)
@@ -183,8 +183,7 @@ describe('Button.vue', () => {
     let wrapper = shallow(Button)
 
     // Set start values
-    wrapper.vm.isActive = true
-    wrapper.vm.timer = 'timer'
+    wrapper.setData({isActive: true, timer: 'timer'})
 
     // Set to 25 and validate result
     wrapper.vm.end()
@@ -202,5 +201,24 @@ describe('Button.vue', () => {
     expect(clearTimeout).toHaveBeenCalledWith('timer')
     expect(wrapper.vm.percent).toBe(0)
     expect(wrapper.vm.isActive).toBe(false)
+  })
+
+  it('renders correctly in default state', () => {
+    // Create component
+    const wrapper = shallow(Button)
+
+    // Validations
+    expect(wrapper.html()).toMatchSnapshot()
+  })
+
+  it('renders correctly in active state', () => {
+    // Create component
+    const wrapper = shallow(Button)
+
+    // Set active state
+    wrapper.setData({isActive: true})
+
+    // Validations
+    expect(wrapper.html()).toMatchSnapshot()
   })
 })
