@@ -1,6 +1,6 @@
 <template>
-  <button class="__progress-button" :class="{active: isActivated}" :disabled="isActive" data-progress-style="fill-back" @click="click">
-    <div class="__progress" :style="styling"></div>
+  <button :class="{active: isActivated}" :disabled="isActive" class="__progress-button" data-progress-style="fill-back" @click="click">
+    <div :style="styling" class="__progress" />
     <div class="__progress-button-content"><slot /></div>
   </button>
 </template>
@@ -32,15 +32,7 @@
 </style>
 <script>
 export default {
-  name: 'app',
-  data () {
-    return {
-      isActive: false,
-      timer: null,
-      percent: 0,
-      steps: 200
-    }
-  },
+  name: 'VueProgressButton',
   props: {
     fillColor: {
       type: String,
@@ -57,6 +49,14 @@ export default {
     position: {
       type: String,
       default: 'fill'
+    }
+  },
+  data () {
+    return {
+      isActive: false,
+      timer: null,
+      percent: 0,
+      steps: 200
     }
   },
   computed: {
@@ -125,5 +125,3 @@ export default {
   }
 }
 </script>
-
-
