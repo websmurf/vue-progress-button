@@ -1,10 +1,19 @@
 {
-  "name": "uikit",
-  "description": "Nostradamus shared UI elements",
-  "version": "1.0.0",
-  "author": "Adam van Dongen <adam@nostradamus.nu>",
-  "license": "Commerial",
-  "private": true,
+  "name": "vue-progress-button",
+  "version": "1.2.0",
+  "description": "A Vue project to make buttons that show the progress when being clicked on.",
+  "author": "Richard de Jongh <richarddejongh1995@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "homepage": "https://github.com/websmurf/vue-progress-button",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue-component",
+    "progress",
+    "button"
+  ],
+  "main": "dist/build.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
