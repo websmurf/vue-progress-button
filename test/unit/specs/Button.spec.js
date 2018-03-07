@@ -1,10 +1,10 @@
-'use strict';
+'use strict'
 
 import { shallow } from '@vue/test-utils'
 import Button from 'src/Button'
 
 // Use fake timers
-jest.useFakeTimers();
+jest.useFakeTimers()
 
 describe('Button.vue', () => {
   it('should have some default data set when the component is constructed', () => {
