@@ -1,6 +1,6 @@
 {
   "name": "vue-progress-button",
-  "version": "v1.3.2-alpha",
+  "version": "1.3.2-alpha2",
   "description": "A Vue project to make buttons that show the progress when being clicked on.",
   "author": "Richard de Jongh <richarddejongh1995@gmail.com>",
   "license": "MIT",
