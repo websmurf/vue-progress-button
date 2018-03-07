@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.3.0
+
+Changed:
+
+- Migrated tests from karma to jest and added some snapshot tests
+
 ### 1.2.0
 
 Changed:
