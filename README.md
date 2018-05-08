@@ -1,5 +1,8 @@
 # Notify
 
+[![Build Status](https://travis-ci.org/websmurf/vue-progress-button.svg?branch=master)](https://travis-ci.org/websmurf/vue-progress-button)
+[![Coverage Status](https://coveralls.io/repos/github/websmurf/vue-progress-button/badge.svg?branch=master)](https://coveralls.io/github/websmurf/vue-progress-button?branch=master)
+
 A simple button that displays progress. Compatible with Vue 2.x
 
 Inspired by the button animations displayed on [https://tympanus.net/Development/ProgressButtonStyles/](https://tympanus.net/Development/ProgressButtonStyles/)
